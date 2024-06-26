@@ -10,7 +10,7 @@ const LoginPage = () => {
   const handleAdminLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5001/api/admin/login', {
+      const response = await axios.post('https://hussaiinkhan-yetis-plus-assesment-task-xnp6.vercel.app/api/admin/login', {
         phone,
         password
       });
