@@ -29,7 +29,7 @@ const AdForm = (props) => {
     const token = localStorage.getItem('token');
 
     try {
-      const response = await axios.post('http://localhost:5001/api/admin/ads', form, {
+      const response = await axios.post('https://yetisplusapi.onrender.com/api/admin/ads', form, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`, // Include the token in the request headers
