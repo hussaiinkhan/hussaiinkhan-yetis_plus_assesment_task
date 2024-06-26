@@ -13,7 +13,7 @@ const AdminAds = (props) => {
     const fetchAds = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await axios.get('http://localhost:5001/api/admin/ads', {
+        const response = await axios.get('https://hussaiinkhan-yetis-plus-assesment-task-xnp6.vercel.app/api/admin/ads', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
