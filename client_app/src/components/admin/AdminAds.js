@@ -13,7 +13,7 @@ const AdminAds = (props) => {
     const fetchAds = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await axios.get('http://localhost:5001/api/admin/ads', {
+        const response = await axios.get('https://yetisplusapi.onrender.com/api/admin/ads', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
