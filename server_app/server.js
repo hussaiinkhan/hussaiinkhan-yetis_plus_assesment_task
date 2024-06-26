@@ -20,7 +20,7 @@ app.use(express.json());
 //const upload = multer({ dest: 'uploads/' });
 
 app.use(cors({      //this is used to access the backend apis from front-end
-    origin:'http://yetisplustask.vercel.app',  //since our front-end will run on port 3000
+    origin:'https://yetisplustask.vercel.app',  //since our front-end will run on port 3000
     credentials : true
 }))
 
