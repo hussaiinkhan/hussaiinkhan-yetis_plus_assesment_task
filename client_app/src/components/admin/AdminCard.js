@@ -34,7 +34,7 @@ const AdminCard = (props) => {
     console.log(props.id);
     try {
       const response = await axios.put(
-        `http://localhost:5001/api/admin/ads/${props.id}`,
+        `https://yetisplusapi.onrender.com/api/admin/ads/${props.id}`,
         editForm,
         {
           headers: {
@@ -57,7 +57,7 @@ const AdminCard = (props) => {
     console.log(props.id);
     try {
       const response = await axios.delete(
-        `http://localhost:5001/api/admin/ads/${props.id}`,
+        `https://yetisplusapi.onrender.com/api/admin/ads/${props.id}`,
         {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem("token")}`,
