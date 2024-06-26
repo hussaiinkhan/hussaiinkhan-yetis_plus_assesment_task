@@ -12,7 +12,7 @@ const LoginPage = () => {
   const handleAdminSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5001/api/admin/register', {
+      const response = await axios.post('https://hussaiinkhan-yetis-plus-assesment-task-xnp6.vercel.app/api/admin/register', {
         name,
         surname,
         phone,
