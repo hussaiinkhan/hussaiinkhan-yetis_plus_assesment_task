@@ -15,7 +15,7 @@ const AdminAds = () => {
   const fetchClientBudget = async () => {
     try {
       const token = localStorage.getItem('token'); // Retrieve JWT token from localStorage
-      const response = await axios.get('http://localhost:5001/api/customer/budget', {
+      const response = await axios.get('https://hussaiinkhan-yetis-plus-assesment-task-xnp6.vercel.app/api/customer/budget', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -32,7 +32,7 @@ const AdminAds = () => {
     const fetchAds = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await axios.get('http://localhost:5001/api/customer/ads', {
+        const response = await axios.get('https://hussaiinkhan-yetis-plus-assesment-task-xnp6.vercel.app/api/customer/ads', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -55,7 +55,7 @@ const AdminAds = () => {
     if (ad.price < budget) {
       try {
         const token = localStorage.getItem('token');
-        await axios.post(`http://localhost:5001/api/customer/ads/${ad._id}/rent`, {}, {
+        await axios.post(`https://hussaiinkhan-yetis-plus-assesment-task-xnp6.vercel.app/api/customer/ads/${ad._id}/rent`, {}, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
