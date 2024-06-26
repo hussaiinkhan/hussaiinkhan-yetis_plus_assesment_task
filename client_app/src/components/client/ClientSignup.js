@@ -13,7 +13,7 @@ const SignupPage = () => {
   const handleClientSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5001/api/customer/register', {
+      const response = await axios.post('https://yetisplusapi.onrender.com/api/customer/register', {
         name,
         surname,
         budget,
