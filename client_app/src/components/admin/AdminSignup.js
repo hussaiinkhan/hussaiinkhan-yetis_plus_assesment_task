@@ -12,7 +12,7 @@ const LoginPage = () => {
   const handleAdminSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5001/api/admin/register', {
+      const response = await axios.post('https://yetisplusapi.onrender.com/api/admin/register', {
         name,
         surname,
         phone,
